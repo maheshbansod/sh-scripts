@@ -2,4 +2,4 @@ alias vim=nvim
 
 
 # git aliases
-alias gp=git push
+alias gp="git push"
