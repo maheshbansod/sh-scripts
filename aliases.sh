@@ -9,3 +9,6 @@ alias gst="git status"
 alias gl="git pull"
 alias gc="git commit"
 alias gd="git diff"
+
+alias grep=rg
+alias cat=bat
