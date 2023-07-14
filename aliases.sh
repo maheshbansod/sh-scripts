@@ -1,7 +1,7 @@
 alias vim=nvim
 
-alias l=ls
-alias ll="ls -l"
+alias l=ls -lh
+alias ll="ls -lah"
 
 # git aliases
 alias gp="git push"
