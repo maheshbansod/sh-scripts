@@ -1,6 +1,6 @@
 alias vim=nvim
 
-alias l=ls -lh
+alias l="ls -lh"
 alias ll="ls -lah"
 
 # git aliases
