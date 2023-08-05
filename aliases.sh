@@ -3,6 +3,8 @@ alias vim=nvim
 alias l="ls -lh"
 alias ll="ls -lah"
 
+alias ..="cd .."
+
 # git aliases
 alias gp="git push"
 alias gst="git status"
