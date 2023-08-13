@@ -14,7 +14,6 @@ p() {
 
 # TODO: find the problem and fix it later
 fix_touchpad() {
-	set -e
 	modprobe -r hid_multitouch
 	modprobe hid_multitouch
 }
