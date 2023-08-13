@@ -16,3 +16,5 @@ alias gswc="git switch -c"
 
 alias grep=rg
 alias cat=bat
+
+alias t=todo
