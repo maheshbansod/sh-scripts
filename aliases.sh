@@ -7,11 +7,14 @@ alias ..="cd .."
 
 # git aliases
 alias gp="git push"
+__git_complete gp _git_push
 alias gst="git status"
 alias gl="git pull"
+__git_complete gl _git_pull
 alias gc="git commit"
 alias gd="git diff"
 alias gsw="git switch"
+__git_complete gsw _git_switch
 alias gswc="git switch -c"
 alias gpsup="git push -u origin \$(git_current_branch)"
 
