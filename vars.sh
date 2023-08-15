@@ -1,6 +1,10 @@
 
 export PATH=~/bin:$PATH
-# TODO: add git branch in prompt
+
+git_current_branch() {
+	git branch --show-current
+}
+
 git_branch_formatted() {
 	local current_branch=$(git_current_branch 2> /dev/null)
 	if [[ ! -z "$current_branch" ]]; then

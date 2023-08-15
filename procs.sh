@@ -17,7 +17,3 @@ fix_touchpad() {
 	modprobe -r hid_multitouch
 	modprobe hid_multitouch
 }
-
-git_current_branch() {
-	git branch --show-current
-}
