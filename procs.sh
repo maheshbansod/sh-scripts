@@ -14,8 +14,8 @@ p() {
 
 # TODO: find the problem and fix it later
 fix_touchpad() {
-	modprobe -r hid_multitouch
-	modprobe hid_multitouch
+	sudo modprobe -r hid_multitouch
+	sudo modprobe hid_multitouch
 }
 
 git_current_branch() {
