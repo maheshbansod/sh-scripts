@@ -25,8 +25,9 @@ git_current_branch() {
 procenv() {
 	(
 	PID=$1
+	FNAME=${FUNCNAME[0]}
 	usage() {
-		echo "USAGE: $0 <PID>"
+		echo "USAGE: $FNAME <PID>"
 	}
 	if [ -z "$PID" ]; then
 		usage
