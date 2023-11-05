@@ -21,3 +21,23 @@ fix_touchpad() {
 git_current_branch() {
 	git branch --show-current
 }
+
+procenv() {
+	(
+	PID=$1
+	usage() {
+		echo "USAGE: $0 <PID>"
+	}
+	if [ -z "$PID" ]; then
+		usage
+		return 0
+	fi
+	FILE=/proc/$PID/environ
+	if [ ! -r "$FILE" ]; then
+		echo "Either a process with that ID doesn't exist, or you don't have the correct permission to access it."
+		usage
+		return 101
+	fi
+	sed 's:\x0:\n:g' "$FILE" | bat -l sh --style="numbers,grid"
+	)
+}
